@@ -289,9 +289,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "SwUITest1/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "Expressions/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwUITest1/Info.plist;
+				INFOPLIST_FILE = Expressions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,9 +308,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "SwUITest1/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "Expressions/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwUITest1/Info.plist;
+				INFOPLIST_FILE = Expressions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

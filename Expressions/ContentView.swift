@@ -35,13 +35,12 @@ struct ContentView: View {
 
 struct ContentButton: View {
     enum AnimationStage {
-        case hidden
         case initial
         case fadeOut
     }
     let title: String
     let action: () -> Void
-    @State var animationStage: AnimationStage = .hidden
+    @State var animationStage: AnimationStage = .fadeOut
 
     var body: some View {
         Button(action: {
@@ -58,14 +57,13 @@ struct ContentButton: View {
                     .scale(animationStage.scale)
                     .opacity(animationStage.opacity)
             }
-        }
+        }.font(.largeTitle)
     }
 }
 
 extension ContentButton.AnimationStage {
     var scale: CGFloat {
         switch self {
-        case .hidden: return 0
         case .initial: return 0.2
         case .fadeOut: return 1.5
         }
@@ -73,7 +71,6 @@ extension ContentButton.AnimationStage {
     
     var opacity: Double {
         switch self {
-        case .hidden: return 0
         case .initial: return 0.5
         case .fadeOut: return 0
         }
@@ -83,7 +80,7 @@ extension ContentButton.AnimationStage {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(ColorScheme())
     }
 }
 #endif
