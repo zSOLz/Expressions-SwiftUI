@@ -13,10 +13,11 @@ Also it would be a great playground of all new features of Swift and iOS. So no 
 - Add functions
 - Add currency exchanger
 - Add history
-- Implement MacOS Expressions.
-- Implement WatchOS Expressions.
-- Bomus level: Implement TV OS Expressions (Am I Crazy:)?) With Voice recognition.
-- Implement history sync
+- Add configurable style
+- Implement Expressions for MacOS.
+- Implement Expressions for WatchOS.
+- Bonus level: Implement Expressions for TV OS (Am I Crazy:)?) With Voice recognition.
+- Implement history sync via all devices
 - Add syncronizable variables
 - AppStore publishing
 
