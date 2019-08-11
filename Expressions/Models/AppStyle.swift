@@ -1,5 +1,5 @@
 //
-//  ColorScheme.swift
+//  AppStyle.swift
 //  SwUITest1
 //
 //  Created by Andrei Salavei on 8/9/19.
@@ -9,22 +9,16 @@
 import SwiftUI
 import Combine
 
-class ColorScheme: ObservableObject {
+class AppStyle: ObservableObject {
     var objectWillChange = PassthroughSubject<Void, Never>()
     
-    var mainColor: Color {
-        didSet {
-            objectWillChange.send()
-        }
-    }
-    var backgroundColor: Color {
-        didSet {
-            objectWillChange.send()
-        }
-    }
-    
+    var mainColor: Color { didSet { objectWillChange.send() } }
+    var backgroundColor: Color { didSet { objectWillChange.send() } }
+    var errorColor: Color { didSet { objectWillChange.send() } }
+
     init() {
         mainColor = .blue
         backgroundColor = .white
+        errorColor = .red
     }
 }
