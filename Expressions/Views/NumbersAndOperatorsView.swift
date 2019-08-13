@@ -43,14 +43,14 @@ struct NumbersAndOperatorsView: View {
                 AddSymbolButton("0")
                 GeneralButton { Text("") }
                 AddSymbolButton(",")
-                GeneralButton { Text("=") }
+                GeneralButton(tapAction: { self.viewModel.calculate() }) { Text("=") }
             }
         }
         .accentColor(appStyle.mainColor)
         .font(Font.largeTitle.weight(.thin))
     }
     
-    func AddSymbolButton(_ text: String) -> GeneralButton<Text> {
+    private func AddSymbolButton(_ text: String) -> GeneralButton<Text> {
         GeneralButton(tapAction: { self.viewModel.append(text: text) },
                       label: { Text(text)})
     }
