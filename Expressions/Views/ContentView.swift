@@ -15,7 +15,6 @@ struct ContentView: View {
     @ObservedObject var viewModel: ExpressionsViewModel
 
     var body: some View {
-        VStack(spacing: 123) {
             ExpressionsView(viewModel: viewModel)
                 .font(Font.largeTitle.weight(.thin))
                 .padding([.top])
