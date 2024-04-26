@@ -9,11 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+
+
     @EnvironmentObject var appStyle: AppStyle
     @ObservedObject var viewModel: ExpressionsViewModel
 
     var body: some View {
-        VStack(spacing: 0) {
             ExpressionsView(viewModel: viewModel)
                 .font(Font.largeTitle.weight(.thin))
                 .padding([.top])
